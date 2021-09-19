@@ -25,6 +25,15 @@ public class ManageAccount extends AppCompatActivity {
         button2 = (Button) findViewById(R.id.btnAdd);
         imgBack = findViewById(R.id.imageViewMgt);
 
+        imgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                //To start the activity
+                startActivity(i);
+            }
+        });
+
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
